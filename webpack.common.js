@@ -12,20 +12,20 @@ module.exports = {
                 use: ["html-loader"]
             },
             {
-                test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
-                use: {
-                  loader: "babel-loader"
-                }
-            },
-            {
-                test: /\.(svg|png|jpg|gif)$/,
+                test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
                 use: {
                     loader: "file-loader",
                     options: {
                         name: "[name].[hash].[ext]",
                         outputPath: "imgs"
                     }
+                }
+            },
+            {
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: {
+                  loader: "babel-loader"
                 }
             }
         ]

@@ -29,3 +29,5 @@ ES6 Support, React JS workflow via babel
 SASS using sass-loader
 
 Assets loading
+
+Postcss loader with css vendor prefixing
